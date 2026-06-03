@@ -19,7 +19,7 @@ export function Footer() {
               <span>NextHub</span>
             </Link>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              Your curated directory of the web's essential tools, services, and resources.
+              Your curated directory of the web&apos;s essential tools, services, and resources.
             </p>
             <div className="flex gap-2">
               <a
