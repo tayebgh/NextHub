@@ -54,7 +54,7 @@ export function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-xl text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
-            A hand-curated directory of the web's essential tools, services, and
+            A hand-curated directory of the web&apos;s essential tools, services, and
             resources — organized and ready to explore.
           </p>
 
