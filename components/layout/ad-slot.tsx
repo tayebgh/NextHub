@@ -16,7 +16,7 @@ export function AdSlot({ slot, format = "horizontal", className }: AdSlotProps) 
   useEffect(() => {
     if (adsenseId) {
       try {
-        // @ts-ignore
+       // @ts-expect-error
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch {}
     }
