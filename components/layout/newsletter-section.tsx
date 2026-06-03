@@ -65,7 +65,7 @@ export function NewsletterSection() {
           {status === "success" ? (
             <div className="flex items-center justify-center gap-3 text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 rounded-xl p-4">
               <CheckCircle className="w-5 h-5" />
-              <p className="font-medium">You're subscribed! Welcome aboard.</p>
+              <p className="font-medium">You&apos;re subscribed! Welcome aboard.</p>
             </div>
           ) : (
             <form
