@@ -29,7 +29,7 @@ export default function ContactPage() {
     formState: { errors },
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async (_data: FormData) => {
     setStatus("loading");
     // In production: send via Resend or similar
     // For now, simulate success
