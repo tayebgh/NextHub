@@ -56,7 +56,7 @@ async function scrapeMetadata(url: string) {
       description: description?.slice(0, 300) || null,
       og_image: ogImage,
     };
-  } catch (err) {
+  } catch (_err) {
     const domain = new URL(url).hostname.replace("www.", "");
     return {
       name: domain,
