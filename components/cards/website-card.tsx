@@ -4,7 +4,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { createClient } from "@/lib/supabase/client";
-import { Button } from "@/components/ui/button";
 import { cn, getFaviconUrl, getDomain, formatNumber } from "@/lib/utils";
 import {
   Bookmark,
@@ -61,7 +60,7 @@ export function WebsiteCard({ website, compact = false }: WebsiteCardProps) {
     return () => {
       supabase.removeChannel(channel);
     };
-  }, [website.id]);
+  }, [website.id, supabase]);
 
   const handleBookmark = async (e: React.MouseEvent) => {
     e.preventDefault();
