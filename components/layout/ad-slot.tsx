@@ -16,11 +16,11 @@ export function AdSlot({ slot, format = "horizontal", className }: AdSlotProps) 
   useEffect(() => {
     if (adsenseId) {
       try {
-       // @ts-expect-error
+       // @ts-expect-error adsbygoogle is a global Google AdSense object not typed in TypeScript
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch {}
     }
-  }, []);
+  }, [adsenseId]);
 
   if (!adsenseId) {
     // Placeholder in development
