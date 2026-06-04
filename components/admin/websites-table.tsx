@@ -121,7 +121,7 @@ export function AdminWebsitesTable({
     setActionId(null);
   };
 
-  const handleRescrape = async (website: Website) => {
+  const _handleRescrape = async (website: Website) => {
     setActionId(website.id);
     try {
       await fetch("/api/scrape-meta", {
